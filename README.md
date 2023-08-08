@@ -2,7 +2,7 @@
 
 ## Purpose
 
-An implementation of the [folio_migration_tools](https://github.com/FOLIO-FSE/folio_migration_tools) that focuses specifically on loading users. Example source data and transformed data can be found in the iterations folder. Examples of the necessary files can be found in `examples`
+An implementation of the [folio_migration_tools](https://github.com/FOLIO-FSE/folio_migration_tools) that focuses specifically on loading users. Example source data and transformed data can be found in the iterations folder. Examples of the necessary files can be found in `examples`.
 
 ## Requirements
 
