@@ -13,7 +13,6 @@ An implementation of the [folio_migration_tools](https://github.com/FOLIO-FSE/fo
 
 - `poetry install`
 - `poetry shell`
-- `sh create_folder_structure.sh``
 
 ## Workflow Outline
 
