@@ -25,13 +25,19 @@ An implementation of the [folio_migration_tools](https://github.com/FOLIO-FSE/fo
 
 ## Map Data
 
-The folio migration tools use maps for transforming user records into FOLIO-ready data. 
+The folio migration tools use metadata maps for transforming user records into FOLIO-ready data. 
 
 ### User Groups
 
-The FOLIO patron groups **must already be configured** before transforming user records
+`mapping_files/user_groups.tsv` 
 
-`mapping_files/user_groups.tsv` maps patron groups as represented in source data to patron groups configured in FOLIO. The source data column should have the same header as the source TSV file. 
+The FOLIO patron groups **MUST ALREADY BE CONFIGURED IN FOLIO** before transforming user records
+
+This file maps patron groups as represented in source data to patron groups configured in FOLIO. The source data column should have the same header as the source TSV file. 
+
+**Example:** <br>
+
+<img width="387" alt="image" src="https://github.com/kevinpowell1/folio_user_loading/assets/66270317/326f4969-cc7d-4151-87b9-f1619ffa3644">
 
 The map requires a wildcard row for any source values that are not mapped. The wildcard row in this example is
 
@@ -39,13 +45,13 @@ The map requires a wildcard row for any source values that are not mapped. The w
 |--------------|-------------|
 | *            | Other       |
 
-**Example:** <br>
-
-<img width="387" alt="image" src="https://github.com/kevinpowell1/folio_user_loading/assets/66270317/326f4969-cc7d-4151-87b9-f1619ffa3644">
-
 ### Field-to-Field Mapping
 
-`mapping_files/user_mapping.json` takes care of field-to-field mapping.
+`mapping_files/user_mapping.json`
+
+This file takes care of field-to-field mapping
+
+In this example, the source field `Patron ID` is mapped to the FOLIO field `barcode`.
 
 ```json
 {
@@ -56,7 +62,7 @@ The map requires a wildcard row for any source values that are not mapped. The w
 }
 ```
 
-You can also hardcode values for a field
+This file can also hard-code values in user records. In this example, the FOLIO field `personal.addresses[0].primaryAddress` will be hardcoded as `true`.  
 
 ```json
 {
@@ -67,7 +73,7 @@ You can also hardcode values for a field
 }
 ```
 
-Columns in your original CSV data can be mapped to one or more FOLIO fields
+TIP: Columns in your original CSV data can be mapped to one or more FOLIO fields
 
 ```json
 [
@@ -85,3 +91,4 @@ Columns in your original CSV data can be mapped to one or more FOLIO fields
   }
 ]
 ```
+
