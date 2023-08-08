@@ -1,0 +1,47 @@
+{
+  "libraryInformation": {
+    "tenantId": "YOUR TENANT ID",
+    "multiFieldDelimiter": "<^>",
+    "okapiUrl": "https://okapi-YOURDOMAIN.folio.ebsco.com",
+    "okapiUsername": "YOUR_API_SURE",
+    "logLevelDebug": false,
+    "libraryName": "YOUR LIBRARY NAME",
+    "folioRelease": "orchid",
+    "addTimeStampToFileNames": true,
+    "iterationIdentifier": "user_loading"
+  },
+  "migrationTasks": [
+    {
+      "name": "user_transform",
+      "migrationTaskType": "UserTransformer",
+      "userMappingFileName": "user_mapping.json",
+      "groupMapPath": "user_groups.tsv",
+      "useGroupMap": true,
+      "userFile": {
+        "file_name": "YOUR_SOURCE_DATA.TSV"
+      }
+    },
+    {
+      "name": "post_users",
+      "migrationTaskType": "BatchPoster",
+      "objectType": "Users",
+      "batchSize": 250,
+      "files": [
+        {
+          "file_name": "YOUR_TRANSFORMED_USERS.JSON"
+        }
+      ]
+    },
+    {
+      "name": "extradata_users",
+      "migrationTaskType": "BatchPoster",
+      "objectType": "Extradata",
+      "batchSize": 1,
+      "files": [
+        {
+          "file_name": "YOUR_USER_EXTRADATA.extradata"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "data": [
+    {
+      "folio_field": "barcode",
+      "legacy_field": "Patron ID",
+      "value": "",
+      "description": ""
+    },
+    {
+      "folio_field": "username",
+      "legacy_field": "Username",
+      "value": "",
+      "description": ""
+    },
+    {
+      "folio_field": "externalSystemId",
+      "legacy_field": "Email",
+      "value": "",
+      "description": ""
+    },
+    {
+      "folio_field": "legacyIdentifier",
+      "legacy_field": "Patron ID",
+      "value": "",
+      "description": ""
+    },
+    {
+      "folio_field": "patronGroup",
+      "legacy_field": "Patron Group",
+      "value": "",
+      "description": ""
+    },
+
+    {
+      "folio_field": "Enrollment Date",
+      "legacy_field": "Not mapped",
+      "value": "",
+      "description": ""
+    },
+    {
+      "folio_field": "expirationDate",
+      "legacy_field": "Expiration Date",
+      "value": "",
+      "description": ""
+    },
+    {
+      "folio_field": "personal.addresses[0].addressLine1",
+      "legacy_field": "Address Line 1",
+      "value": "",
+      "description": ""
+    },
+    {
+      "folio_field": "personal.addresses[0].addressLine2",
+      "legacy_field": "Address Line 2",
+      "value": "",
+      "description": ""
+    },
+    {
+      "folio_field": "personal.addresses[0].city",
+      "legacy_field": "City",
+      "value": "",
+      "description": ""
+    },
+    {
+      "folio_field": "personal.addresses[0].region",
+      "legacy_field": "State",
+      "value": "",
+      "description": ""
+    },
+    {
+      "folio_field": "personal.addresses[0].postalCode",
+      "legacy_field": "Zip Code",
+      "value": "",
+      "description": ""
+    },
+    {
+      "folio_field": "personal.addresses[0].countryId",
+      "legacy_field": "Country",
+      "value": "",
+      "description": ""
+    },
+    {
+      "folio_field": "personal.addresses[0].primaryAddress",
+      "legacy_field": "",
+      "value": true,
+      "description": ""
+    },
+    {
+      "folio_field": "personal.addresses[0].addressTypeId",
+      "legacy_field": "",
+      "value": "Home",
+      "description": ""
+    },
+    {
+      "folio_field": "personal.email",
+      "legacy_field": "Email",
+      "value": "",
+      "description": ""
+    },
+    {
+      "folio_field": "personal.firstName",
+      "legacy_field": "First Name",
+      "value": "",
+      "description": ""
+    },
+    {
+      "folio_field": "personal.lastName",
+      "legacy_field": "Last Name",
+      "value": "",
+      "description": ""
+    },
+    {
+      "folio_field": "personal.mobilePhone",
+      "legacy_field": "Not mapped",
+      "value": "",
+      "description": ""
+    },
+    {
+      "folio_field": "notes[0].typeId",
+      "legacy_field": "Not mapped",
+      "value": "",
+      "description": ""
+    },
+    {
+      "folio_field": "notes[0].domain",
+      "legacy_field": "Not mapped",
+      "value": "",
+      "description": ""
+    },
+    {
+      "folio_field": "notes[0].title",
+      "legacy_field": "Not mapped",
+      "value": "",
+      "description": ""
+    },
+    {
+      "folio_field": "notes[0].content",
+      "legacy_field": "Not mapped",
+      "value": "",
+      "description": ""
+    },
+    {
+      "folio_field": "notes[0].popUpOnCheckOut",
+      "legacy_field": "",
+      "value": false,
+      "description": ""
+    },
+    {
+      "folio_field": "notes[0].popUpOnUser",
+      "legacy_field": "",
+      "value": false,
+      "description": ""
+    }
+  ]
+}
