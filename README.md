@@ -39,7 +39,8 @@ The map requires a wildcard row for any source values that are not mapped. The w
 |--------------|-------------|
 | *            | Other       |
 
-Example:
+Example:<br>
+
 <img width="387" alt="image" src="https://github.com/kevinpowell1/folio_user_loading/assets/66270317/326f4969-cc7d-4151-87b9-f1619ffa3644">
 
 ### Field-to-Field Mapping
