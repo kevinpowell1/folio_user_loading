@@ -3,7 +3,7 @@
     "tenantId": "YOUR TENANT ID",
     "multiFieldDelimiter": "<^>",
     "okapiUrl": "https://okapi-YOURDOMAIN.folio.ebsco.com",
-    "okapiUsername": "YOUR_API_SURE",
+    "okapiUsername": "YOUR_API_USER",
     "logLevelDebug": false,
     "libraryName": "YOUR LIBRARY NAME",
     "folioRelease": "orchid",
