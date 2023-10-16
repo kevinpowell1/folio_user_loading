@@ -7,7 +7,7 @@
     "logLevelDebug": false,
     "libraryName": "YOUR LIBRARY NAME",
     "folioRelease": "orchid",
-    "addTimeStampToFileNames": true,
+    "addTimeStampToFileNames": false,
     "iterationIdentifier": "user_loading"
   },
   "migrationTasks": [
