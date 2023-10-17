@@ -99,7 +99,7 @@ Open `configuration/configuration.json`
 ### Fill out Library Configuration
 
 ```json
-  {
+{
     "libraryInformation": {
       "tenantId": "YOUR TENANT ID",
       "multiFieldDelimiter": "<^>",
@@ -121,14 +121,14 @@ Open `configuration/configuration.json`
 
 ```json
 {
-  "name": "transform_users",
-  "migrationTaskType": "UserTransformer",
-  "userMappingFileName": "user_mapping.json",
-  "groupMapPath": "user_groups.tsv",
-  "useGroupMap": true,
-  "userFile": {
-    "file_name": "YOUR_SOURCE_DATA.TSV"
-  }
+     "name": "transform_users",
+     "migrationTaskType": "UserTransformer",
+     "userMappingFileName": "user_mapping.json",
+     "groupMapPath": "user_groups.tsv",
+     "useGroupMap": true,
+     "userFile": {
+       "file_name": "YOUR_SOURCE_DATA.TSV"
+     }
 }
 ```
 
@@ -151,15 +151,15 @@ When prompted for the okapi password, enter the password for your `okapiUsername
 
 ```json
 {
-  "name": "post_users",
-  "migrationTaskType": "BatchPoster",
-  "objectType": "Users",
-  "batchSize": 250,
-  "files": [
-    {
-      "file_name": "folio_users_transform_users.json"
-    }
-  ]
+     "name": "post_users",
+     "migrationTaskType": "BatchPoster",
+     "objectType": "Users",
+     "batchSize": 250,
+     "files": [
+       {
+         "file_name": "folio_users_transform_users.json"
+       }
+     ]
 }
 ```
 
@@ -169,15 +169,15 @@ Extradata is in `iterations/user_loading/results`
 
 ```json
 {
-    "name": "post_extradata_users",
-    "migrationTaskType": "BatchPoster",
-    "objectType": "Extradata",
-    "batchSize": 250,
-    "files": [
+      "name": "post_extradata_users",
+      "migrationTaskType": "BatchPoster",
+      "objectType": "Extradata",
+      "batchSize": 250,
+      "files": [
         {
             "file_name": "extradata_transform_users.extradata"
         }
-    ]
+      ]
 }
 ```
 
